@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <style>
-        body {
-            background-color: rgb(246, 246, 246);
-        }
-        iframe {
-            background-color: transparent;
-        }
-    </style>
+    <title>Vega-Lite Chart Embedding</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
-    <iframe src="https://co-lab-charts.pages.dev/co-lab-site/headline_map" width="100%" style="border:none; height:400px; background-color: transparent;" allowtransparency="true"></iframe>
+    <div id="vis"></div>
+
+    <script type="text/javascript">
+        const specPath = 'charts/headline_map.json';
+        vegaEmbed('#vis', specPath).catch(console.error);
+    </script>
 </body>
 </html>
