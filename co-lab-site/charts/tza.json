@@ -1,0 +1,308 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Manufacturing Share of GDP in Tanzania since 2000",
+    "background": "rgba(255, 255, 255, 0)",
+    "width": "container",
+    "height": 300,
+    "config": {
+      "font": "Circular Std",
+      "mark": {"line": {"interpolate": "linear"}},
+      "view": {"stroke": "transparent", "width": 400, "height": 300},
+      "range": {
+        "category": [
+          "#001f3f",
+          "#4269d0",
+          "#efb118",
+          "#ff725c",
+          "#6cc5b0",
+          "#3ca951",
+          "#ff8ab7",
+          "#a463f2",
+          "#97bbf5",
+          "#9c6b4e"
+        ],
+        "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+        "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+        "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+      },
+      "axisX": {
+        "labelColor": "#122b39",
+        "tickColor": "#122b39",
+        "domainColor": "#122b39",
+        "domainOpacity": 0.5,
+        "gridOpacity": 0,
+        "labelFont": "Circular Std",
+        "labelAngle": 0,
+        "labelAlign": "center",
+        "labelFontSize": 11,
+        "labelPadding": 5,
+        "tickCount": 10,
+        "tickSize": 0,
+        "title": ""
+      },
+      "axisY": {
+        "labelColor": "#122b39",
+        "labelFont": "Circular Std",
+        "tickColor": "#122b39",
+        "domainColor": "#122b39",
+        "gridColor": "#122b39",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "labelPadding": 5,
+        "labelFontSize": 11,
+        "domainOpacity": 0.5,
+        "tickSize": 0,
+        "title": null,
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#122b39",
+        "titleOpacity": 0.9,
+        "titleX": 0,
+        "titleY": -7
+      }
+    },
+    "data": {
+      "values": [
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2000,
+          "Manufacturing Share of GDP": 9.86151299438944
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2001,
+          "Manufacturing Share of GDP": 9.46889199709689
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2002,
+          "Manufacturing Share of GDP": 9.37021402466056
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2003,
+          "Manufacturing Share of GDP": 9.37908176360761
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2004,
+          "Manufacturing Share of GDP": 9.19337723892357
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2005,
+          "Manufacturing Share of GDP": 9.0265030743805
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2006,
+          "Manufacturing Share of GDP": 8.82143925430885
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2007,
+          "Manufacturing Share of GDP": 8.81741434533145
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2008,
+          "Manufacturing Share of GDP": 8.74458896067224
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2009,
+          "Manufacturing Share of GDP": 8.66667526929843
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2010,
+          "Manufacturing Share of GDP": 8.66582930166506
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2011,
+          "Manufacturing Share of GDP": 9.54869845954528
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2012,
+          "Manufacturing Share of GDP": 9.43823326401605
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2013,
+          "Manufacturing Share of GDP": 9.11089516632175
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2014,
+          "Manufacturing Share of GDP": 9.12010900018828
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2015,
+          "Manufacturing Share of GDP": 7.85556496098664
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2016,
+          "Manufacturing Share of GDP": 7.81371783783383
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2017,
+          "Manufacturing Share of GDP": 7.6655871547421
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2018,
+          "Manufacturing Share of GDP": 8.07382315106412
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2019,
+          "Manufacturing Share of GDP": 8.50181055578149
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2020,
+          "Manufacturing Share of GDP": 8.03212809036323
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2021,
+          "Manufacturing Share of GDP": 8.02487463288165
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2022,
+          "Manufacturing Share of GDP": 8.18310234075459
+        },
+        {
+          "Country Name": "Tanzania",
+          "Country Code": "TZA",
+          "Indicator Name": "Manufacturing, value added (% of GDP)",
+          "Indicator Code": "NV.IND.MANF.ZS",
+          "Year": 2023,
+          "Manufacturing Share of GDP": 8.38499764237695
+        }
+      ]
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Year", "type": "quantitative", "title": null},
+      "y": {
+        "field": "Manufacturing Share of GDP",
+        "type": "quantitative",
+        "title": null
+      },
+      "color": {"value": "#4269d0"},
+      "tooltip": [
+        {"field": "Year", "type": "quantitative"},
+        {"field": "Manufacturing Share of GDP", "type": "quantitative"}
+      ]
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "x": {"field": "Year", "type": "quantitative"},
+          "y": {"field": "Manufacturing Share of GDP", "type": "quantitative"}
+        }
+      },
+      {
+        "mark": {"type": "text", "align": "left", "dx": 5},
+        "transform": [{"filter": {"field": "Year", "equal": 2023}}],
+        "encoding": {
+          "x": {"field": "Year", "type": "quantitative", "axis": {"format": ""}},
+          "y": {
+            "field": "Manufacturing Share of GDP",
+            "type": "quantitative",
+            "axis": {
+              "labelExpr": "datum.value+'%' + (datum.value == 10 ? ' of GDP' : '')"
+            }
+          },
+          "text": {"value": "Manufacturing Share", "type": "quantitative"}
+        }
+      },
+      {
+        "mark": {"type": "text", "align": "left", "dx": 5, "dy": 12},
+        "transform": [{"filter": {"field": "Year", "equal": 2023}}],
+        "encoding": {
+          "x": {"field": "Year", "type": "quantitative"},
+          "y": {"field": "Manufacturing Share of GDP", "type": "quantitative"},
+          "text": {"value": "of GDP", "type": "quantitative"}
+        }
+      }
+    ]
+  }

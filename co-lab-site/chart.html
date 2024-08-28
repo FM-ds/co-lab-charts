@@ -29,6 +29,9 @@
 
         // Extract the chart parameter from the URL
         const chartFile = getUrlParameter('chart');
+        if (!chartFile) {
+            console.error('No chart parameter provided');
+        }
         const specPath = chartFile ? `charts/${chartFile}` : 'charts/headline_map.json';
 
         // Embed the Vega-Lite visualization
