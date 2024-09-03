@@ -105,6 +105,76 @@ def report():
 
 alt.themes.register('report', report)        
 
+def colab_site():
+  return {"config": {
+    "font": "Roboto",
+    "mark" : {
+      "line": {
+        "interpolate": "linear",
+      }
+    },
+    "view" : {
+      "stroke": "transparent",
+      "width": 400,
+      "height": 300
+    },
+    "range": {
+      "category" : [
+        pallete["nominal_1"],
+        pallete["nominal_2"],
+        pallete["nominal_3"],
+        pallete["nominal_4"],
+        pallete["nominal_5"],
+        pallete["nominal_6"],
+      ],
+      "diverging" : ["#E6224B","#E54753","#C9C9C9","#179FDB","#122B39"],
+      "heatmap" : ["#C9C9C9","#179FDB","#0063AF","#122B39"],
+      "ordinal" : ["#00A767","#36B7B4","#179FDB","#0063AF","#243B5A"]
+    },
+    "axisX": {
+      "labelColor": pallete["domain"],
+      "tickColor": pallete["domain"],
+      "domainColor": pallete["domain"],
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Roboto",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": pallete["domain"],
+      "labelFont": "Roboto",
+      "tickColor": pallete["domain"],
+      "domainColor": pallete["domain"],
+      "gridColor": pallete["domain"],
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": None,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": pallete["domain"],
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    }
+  }}
+
+alt.themes.register('colab_site', colab_site)        
+
+
 def light():
   return {"config": {
     "font": "Circular Std",

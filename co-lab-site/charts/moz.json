@@ -1,131 +1,127 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "background": "rgba(255, 255, 255, 0)",
-    "width": "container",
-    "height": 300,
-    "config": {
-      "font": "Circular Std",
-      "mark": {
-          "line": {
-              "interpolate": "linear"
-          }
-      },
-      "view": {
-          "stroke": "transparent",
-          "width": 400,
-          "height": 300
-      },
-      "range": {
-          "category": [
-              "#001f3f","#4269d0","#efb118","#ff725c","#6cc5b0","#3ca951","#ff8ab7","#a463f2","#97bbf5","#9c6b4e"
-          ],
-          "diverging": [
-              "#E6224B","#E54753","#C9C9C9","#179FDB","#122B39"
-          ],
-          "heatmap": [
-              "#C9C9C9","#179FDB","#0063AF","#122B39"
-          ],
-          "ordinal": [
-              "#00A767","#36B7B4","#179FDB","#0063AF","#243B5A"
-          ]
-      },
-      "axisX": {
-          "labelColor": "#122b39",
-          "tickColor": "#122b39",
-          "domainColor": "#122b39",
-          "domainOpacity": 0.5,
-          "gridOpacity": 0,
-          "labelFont": "Circular Std",
-          "labelAngle": 0,
-          "labelAlign": "center",
-          "labelFontSize": 11,
-          "labelPadding": 5,
-          "tickCount": 10,
-          "tickSize": 0,
-          "title": ""
-      },
-      "axisY": {
-          "labelColor": "#122b39",
-          "labelFont": "Circular Std",
-          "tickColor": "#122b39",
-          "domainColor": "#122b39",
-          "gridColor": "#122b39",
-          "gridDash": [
-              1,
-              5
-          ],
-          "gridOpacity": 0.5,
-          "labelPadding": 5,
-          "labelFontSize": 11,
-          "domainOpacity": 0.5,
-          "tickSize": 0,
-          "title": null,
-          "titleAlign": "left",
-          "titleAngle": 0,
-          "titleBaseline": "bottom",
-          "titleColor": "#122b39",
-          "titleOpacity": 0.9,
-          "titleX": 0,
-          "titleY": -7
-      }
-  },
-    "data": {
-      "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/geoBoundaries-MOZ-ADM1.geojson",
-      "format": {
-        "property": "features"
-      }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Roboto",
+    "mark": {"line": {"interpolate": "linear"}},
+    "view": {"stroke": "transparent"},
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
     },
-    "projection": {
-      "type": "identity",
-      "reflectY": true
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Roboto",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
     },
-    "transform": [
-      {
-        "lookup": "properties.shapeName",
-        "from": {
-          "data": {
-            "values": [
-              {"region": "Cabo Delgado", "infantMortality": 72.93},
-              {"region": "Niassa", "infantMortality": 63.49},
-              {"region": "Nampula", "infantMortality": 65.78},
-              {"region": "Tete", "infantMortality": 58.45},
-              {"region": "Zambézia", "infantMortality": 67.17},
-              {"region": "Sofala", "infantMortality": 57.21},
-              {"region": "Manica", "infantMortality": 55.37},
-              {"region": "Inhambane", "infantMortality": 49.73},
-              {"region": "Gaza", "infantMortality": 70.39},
-              {"region": "Maputo", "infantMortality": 45.13}
-            ]
-          },
-          "key": "region",
-          "fields": [
-            "infantMortality"
-            
-          ]
-        }
-      }
-    ],
-  
-    "mark": {
-      "type": "geoshape",
-      "stroke": "lightgray",
-      "strokeWidth": 0.1
-    },
-    "title": {
-      "text": "Infant mortality"
-    },
-    "encoding": {
-      "color": {
-        "field": "infantMortality",
-        "type": "quantitative",
-        "scale": {
-          "scheme": "yelloworangered"
-        },
-        "legend": {
-          "title": "Per 1,000 live births",
-          "labelOffset": 5
-        }
-      } 
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Roboto",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
     }
+  },
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/geoBoundaries-MOZ-ADM1.geojson",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "identity", "reflectY": true},
+  "transform": [
+    {
+      "lookup": "properties.shapeName",
+      "from": {
+        "data": {
+          "values": [
+            {
+              "region": "Cabo Delgado",
+              "infantMortality": 72.93,
+              "povertyRate": 50
+            },
+            {"region": "Niassa", "infantMortality": 63.49, "povertyRate": 67},
+            {"region": "Nampula", "infantMortality": 65.78, "povertyRate": 65},
+            {"region": "Tete", "infantMortality": 58.45, "povertyRate": 42},
+            {"region": "Zambézia", "infantMortality": 67.17, "povertyRate": 62},
+            {"region": "Sofala", "infantMortality": 57.21, "povertyRate": 50},
+            {"region": "Manica", "infantMortality": 55.37, "povertyRate": 37},
+            {
+              "region": "Inhambane",
+              "infantMortality": 49.73,
+              "povertyRate": 35
+            },
+            {"region": "Gaza", "infantMortality": 70.39, "povertyRate": 44},
+            {"region": "Maputo", "infantMortality": 45.13, "povertyRate": 12}
+          ]
+        },
+        "key": "region",
+        "fields": ["infantMortality", "povertyRate"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "lightgray", "strokeWidth": 0.1},
+  "title": {
+    "text": "Poverty in Mozambique",
+    "anchor": "start",
+    "dx": 27,
+    "fontSize": 14,
+    "fontWeight": "normal",
+    "subtitle": ["Regional poverty rate, 2014/5"],
+    "subtitleFontSize": 12,
+    "subtitleFontWeight": 300
+  },
+  "encoding": {
+    "color": {
+      "field": "povertyRate",
+      "type": "quantitative",
+      "scale": {"scheme": "yelloworangered"},
+      "legend": {
+        "direction": "horizontal",
+        "labelExpr": "datum.value + '%'",
+        "gradientLength": 200,
+        "legendX": 25,
+        "legendY": -25,
+        "titleFontWeight": "normal",
+        "orient": "none",
+        "title": [""]
+      }
+    },
+    "tooltip": [
+      {"field": "properties.shapeName", "title": "Region"},
+      {"field": "povertyRate", "title": "Poverty (%)"}
+    ]
   }
-  
+}

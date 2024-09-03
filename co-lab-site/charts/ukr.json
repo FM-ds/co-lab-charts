@@ -1,33 +1,65 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "height": 305,
+  "height": 300,
   "width": "container",
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/O20_C1.csv"
+    "values": [
+      {"Year": "1990", "GDP per capita": 22887.33},
+      {"Year": "1991", "GDP per capita": 20852.29},
+      {"Year": "1992", "GDP per capita": 18733.91},
+      {"Year": "1993", "GDP per capita": 16064.82},
+      {"Year": "1994", "GDP per capita": 12447.48},
+      {"Year": "1995", "GDP per capita": 11015.57},
+      {"Year": "1996", "GDP per capita": 10002.36},
+      {"Year": "1997", "GDP per capita": 9791.12},
+      {"Year": "1998", "GDP per capita": 9691.30},
+      {"Year": "1999", "GDP per capita": 9763.53},
+      {"Year": "2000", "GDP per capita": 10444.18},
+      {"Year": "2001", "GDP per capita": 11483.32},
+      {"Year": "2002", "GDP per capita": 12211.91},
+      {"Year": "2003", "GDP per capita": 13483.02},
+      {"Year": "2004", "GDP per capita": 15188.17},
+      {"Year": "2005", "GDP per capita": 15769.77},
+      {"Year": "2006", "GDP per capita": 17078.84},
+      {"Year": "2007", "GDP per capita": 18592.65},
+      {"Year": "2008", "GDP per capita": 19112.99},
+      {"Year": "2009", "GDP per capita": 16292.11},
+      {"Year": "2010", "GDP per capita": 17026.29},
+      {"Year": "2011", "GDP per capita": 18018.10},
+      {"Year": "2012", "GDP per capita": 18090.17},
+      {"Year": "2013", "GDP per capita": 18139.64},
+      {"Year": "2014", "GDP per capita": 17255.29},
+      {"Year": "2015", "GDP per capita": 15625.73},
+      {"Year": "2016", "GDP per capita": 16071.81},
+      {"Year": "2017", "GDP per capita": 16523.53},
+      {"Year": "2018", "GDP per capita": 17187.18},
+      {"Year": "2019", "GDP per capita": 17839.21},
+      {"Year": "2020", "GDP per capita": 17285.90},
+      {"Year": "2021", "GDP per capita": 18040.35},
+      {"Year": "2022", "GDP per capita": 15022.49},
+      {"Year": "2023", "GDP per capita": 16231.34}
+  ]
   },
   "title": {
-    "text": "Ukrainian real growth",
+    "text": "Ukrainian GDP per capita",
     "align": "left",
     "anchor": "start",
-    "subtitle": ["Real annual GDP growth", "Source: IMF", ""]
+    "subtitle": ["PPP (constant 2021 international $)", "Source: World Bank", ""]
   },
   "config": {
-    "font": "Arial",
-    "mark": {"line": {"interpolate": "linear"}},
-    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "font": "Roboto",
+    "mark": {
+      "line": {
+        "interpolate": "linear"
+      }
+    },
+    "view": {
+      "stroke": "transparent",
+      "width": 400,
+      "height": 300
+    },
     "range": {
-      "category": [
-        "#001f3f",
-        "#4269d0",
-        "#efb118",
-        "#ff725c",
-        "#6cc5b0",
-        "#3ca951",
-        "#ff8ab7",
-        "#a463f2",
-        "#97bbf5",
-        "#9c6b4e"
-      ],
+      "category": ["#179fdb", "#e6224b", "#f4c245", "#122b39", "#eb5c2e", "#36b7b4"],
       "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
       "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
       "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
@@ -38,18 +70,18 @@
       "domainColor": "#122b39",
       "domainOpacity": 0.5,
       "gridOpacity": 0,
-      "labelFont": "Arial",
+      "labelFont": "Roboto",
       "labelAngle": 0,
       "labelAlign": "center",
       "labelFontSize": 11,
       "labelPadding": 5,
       "tickCount": 10,
       "tickSize": 0,
-      "title": ""
+      "title": "Year"
     },
     "axisY": {
       "labelColor": "#122b39",
-      "labelFont": "Arial",
+      "labelFont": "Roboto",
       "tickColor": "#122b39",
       "domainColor": "#122b39",
       "gridColor": "#122b39",
@@ -59,7 +91,7 @@
       "labelFontSize": 11,
       "domainOpacity": 0.5,
       "tickSize": 0,
-      "title": null,
+      "title": "GDP per capita (PPP, constant 2021 $)",
       "titleAlign": "left",
       "titleAngle": 0,
       "titleBaseline": "bottom",
@@ -72,42 +104,29 @@
   "mark": {"type": "line", "color": "#e54753", "size": 2.75},
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "Year",
       "type": "temporal",
-      "sort": [],
       "title": null,
-      "axis": {"grid": false, "labelAngle": 0}
+      "axis": {"grid": false, "labelAngle": 0, "format":"%Y", "labelSeparation":10}
     },
     "y": {
-      "field": "value2",
+      "field": "GDP per capita",
       "type": "quantitative",
-      "title": "CPI",
-      "scale": {"domain": [-0.4, 0.15]},
-      "axis": {
-        "grid": true,
-        "format": ".0%",
-        "labelFontSize": 11,
-        "title": "",
-        "titleAlign": "left",
-        "titleAngle": 0,
-        "titleBaseline": "bottom",
-        "titleFontSize": 12,
-        "titleX": 5,
-        "titleY": 15
-      }
+      "axis":{
+        "format":"$,.0f"
+      },
+      "title": ""
     },
     "tooltip": [
       {
-        "field": "date",
+        "field": "Year",
         "type": "temporal",
-        "timeUnit": "yearmonth",
-        "title": "Date"
+        "title": "Year"
       },
       {
-        "field": "value2",
+        "field": "GDP per capita",
         "type": "quantitative",
-        "format": ".1%",
-        "title": "Real GDP growth"
+        "title": "GDP per capita (PPP, constant 2021 $)"
       }
     ]
   }

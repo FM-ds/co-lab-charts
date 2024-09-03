@@ -1,97 +1,79 @@
 {
   "config": {
-    "font": "Circular Std",
-    "text": {
-      "color": "#676A86",
-      "align": "left",
-      "baseline": "middle",
-      "dx": 7,
-      "dy": 0,
-      "fontSize": 11
+    "font": "Roboto",
+    "mark": {"line": {"interpolate": "linear"}},
+    "view": {"stroke": "transparent"},
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
     },
-    "view": {
-      "stroke": null,
-      "continuousWidth": 400,
-      "continuousHeight": 300,
-      "discreteWidth": 400,
-      "discreteHeight": 300
-    },
-    "bar": {"color": "#179fdb"},
-    "line": {"color": "#e6224b"},
-    "rule": {"color": "#676A86"},
-    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
-    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
-    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
-    "axis": {
-      "labelColor": "#676A86",
-      "labelFontSize": 11,
-      "labelFont": "Circular Std",
-      "labelOpacity": 0.7,
-      "tickColor": "#676A86",
-      "tickOpacity": 0.5,
-      "domainColor": "#676A86",
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
       "domainOpacity": 0.5,
-      "gridColor": "#676A86",
-      "gridDash": [2, 2],
-      "gridOpacity": 0.5,
-      "title": null,
-      "titleColor": "#676A86",
-      "titleOpacity": 0.8,
-      "tickSize": 4
-    },
-    "axisXDiscrete": {
-      "grid": false,
+      "gridOpacity": 0,
+      "labelFont": "Roboto",
       "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
       "tickCount": 10,
-      "tickOpacity": 0.5,
-      "title": null
+      "tickSize": 0,
+      "title": ""
     },
-    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
-    "axisXTemporal": {"grid": false, "ticks": true},
-    "axisXQuantitative": {"grid": true},
-    "axisYQuantitative": {
-      "gridColor": "#676A86",
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Roboto",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
       "gridDash": [1, 5],
       "gridOpacity": 0.5,
-      "ticks": false,
       "labelPadding": 5,
-      "tickCount": 8,
-      "titleAngle": 0,
-      "titleAlign": "left",
-      "titleBaseline": "bottom",
-      "titleX": 0,
-      "titleY": -5
-    },
-    "title": {
-      "color": "#676A86",
-      "subtitleColor": "#122b39E6",
-      "font": "Circular Std",
-      "subtitleFont": "Circular Std",
-      "anchor": "start",
-      "dx": 24,
-      "fontSize": 14,
-      "subtitleFontSize": 12,
-      "subtitlePadding": 4,
-      "offset": 0
-    },
-    "legend": {
-      "titleColor": "#122b39",
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
       "title": null,
-      "labelColor": "#122b39",
-      "labelFontSize": 11
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
     }
   },
-  "title": {"text": "The UK Productivity Gap"},
+  "title": {
+    "text": "The UK productivity gap",
+    "anchor": "start",
+    "dx": 27,
+    "fontSize": 14,
+    "fontWeight": "normal",
+    "subtitle": [
+      "GDP per hour (Q2 2008 = 100) vs trend",
+      "Source: ONS, author's calculations",
+      ""
+    ],
+    "subtitleFontSize": 12,
+    "subtitleFontWeight": 300
+  },
   "layer": [
     {
       "mark": {"type": "line", "color": "#179fdb"},
       "encoding": {
         "x": {"field": "date", "type": "temporal"},
         "y": {
-          "axis": {
-            "title": "GDP per hour (Q2 2008 = 100)",
-            "titleFontStyle": "Book"
-          },
+          "axis": {"title": "", "titleFontStyle": "Book"},
           "field": "value",
           "type": "quantitative"
         }
@@ -114,7 +96,7 @@
         "type": "text",
         "align": "left",
         "baseline": "top",
-        "font": "Circular Std",
+        "font": "Roboto",
         "color": "#e6224b",
         "dx": 5
       },
@@ -163,7 +145,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "font": "Circular Std",
+            "font": "Roboto",
             "color": "#179fdb",
             "dx": 5
           },
