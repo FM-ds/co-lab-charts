@@ -1,0 +1,49 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+    <!-- Timeline background -->
+    <rect x="50" y="50" width="1100" height="50" fill="#D3D3D3" />
+
+    <!-- Timeline arrows -->
+    <polygon points="50,50 70,75 50,100" fill="white" />
+    <polygon points="150,50 170,75 150,100" fill="white" />
+    <polygon points="250,50 270,75 250,100" fill="white" />
+    <polygon points="350,50 370,75 350,100" fill="white" />
+    <polygon points="450,50 470,75 450,100" fill="white" />
+    <polygon points="550,50 570,75 550,100" fill="white" />
+    <polygon points="650,50 670,75 650,100" fill="white" />
+    <polygon points="750,50 770,75 750,100" fill="white" />
+    <polygon points="850,50 870,75 850,100" fill="white" />
+    <polygon points="950,50 970,75 950,100" fill="white" />
+    <polygon points="1050,50 1070,75 1050,100" fill="white" />
+    <polygon points="1150,50 1170,75 1150,100" fill="white" />
+
+    <!-- Year labels -->
+    <text x="80" y="45" font-family="Arial" font-size="16">1930</text>
+    <text x="180" y="45" font-family="Arial" font-size="16">1940</text>
+    <text x="280" y="45" font-family="Arial" font-size="16">1950</text>
+    <text x="380" y="45" font-family="Arial" font-size="16">1960</text>
+    <text x="480" y="45" font-family="Arial" font-size="16">1970</text>
+    <text x="580" y="45" font-family="Arial" font-size="16">1980</text>
+    <text x="680" y="45" font-family="Arial" font-size="16">1990</text>
+    <text x="780" y="45" font-family="Arial" font-size="16">2000</text>
+    <text x="880" y="45" font-family="Arial" font-size="16">2010</text>
+    <text x="1080" y="45" font-family="Arial" font-size="16">Today</text>
+
+    <!-- Labels and annotations -->
+    <text x="40" y="130" font-family="Arial" font-size="14">Great Depression</text>
+    <line x1="100" y1="140" x2="350" y2="140" stroke="black" />
+    <text x="150" y="160" font-family="Arial" font-size="14">Single-equation OLS</text>
+
+    <line x1="370" y1="140" x2="570" y2="140" stroke="black" />
+    <text x="390" y="160" font-family="Arial" font-size="14">Large-scale models</text>
+    <text x="400" y="180" font-family="Arial" font-size="14">Multivariate inference</text>
+    <text x="400" y="200" font-family="Arial" font-size="14">Large-scale macro econometric models</text>
+
+    <line x1="580" y1="140" x2="1080" y2="140" stroke="black" />
+    <text x="650" y="160" font-family="Arial" font-size="14">Non-structural models</text>
+    <text x="660" y="180" font-family="Arial" font-size="14">Structural VAR models</text>
+    <text x="660" y="200" font-family="Arial" font-size="14">Enhanced large-scale macro econometric models</text>
+
+    <line x1="800" y1="220" x2="1100" y2="220" stroke="black" />
+    <text x="850" y="240" font-family="Arial" font-size="14">Structural models</text>
+    <text x="860" y="260" font-family="Arial" font-size="14">New Keynesian DSGE models</text>
+</svg>
