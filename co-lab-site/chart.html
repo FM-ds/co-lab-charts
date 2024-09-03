@@ -18,7 +18,7 @@
 
         body {
             background-color: transparent;
-            font-family: 'Circular Std', Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
         }
     </style>
     <base target="_parent">
@@ -45,7 +45,17 @@
         const specPath = chartFile ? `charts/${chartFile}` : 'charts/headline_map.json';
 
         // Embed the Vega-Lite visualization
-        vegaEmbed('#vis', specPath).catch(console.error);
+        vegaEmbed('#vis', specPath,
+            {
+                actions: false,
+                renderer: 'svg',
+                config: {
+                    view: {
+                        stroke: 'transparent'
+                    }
+                }
+            }
+        ).catch(console.error);
     </script>
 </body>
 </html>
